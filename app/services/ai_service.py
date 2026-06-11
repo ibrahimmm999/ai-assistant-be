@@ -173,7 +173,7 @@ def process_business_intelligence_chat(user_message: str, session_id: str = "ses
         except Exception as err:
             return {
                 "intent": "error",
-                "response": f"Mohon maaf, terjadi gangguan teknis saat memproses ekstraksi analitik: {str(err)}",
+                "response": f"Mohon maaf, terjadi gangguan teknis saat memproses ekstraksi analitik",
                 "generated_sql": locals().get('generated_sql', None)
             }
             
